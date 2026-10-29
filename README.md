@@ -19,6 +19,16 @@ O uso de <br><br> para espaçamento é uma prática não recomendada — o ideal
 
 
 
+_____________________________________________________________________________________________________________________________________________-
+
+
+O projeto ficou muito bem estruturado, principalmente pelo uso das tags semânticas do HTML5. A utilização de `<main>`, `<section>` e `<article>` ajudou a organizar e separar bem cada parte do conteúdo, enquanto a tag `<nav>` deixou a área de navegação bem definida. Também gostei da organização dos títulos com `<h1>`, `<h2>` e `<h3>`, mantendo uma boa hierarquia das informações.
+
+O formulário também ficou bem completo, utilizando tags como `<form>`, `<fieldset>`, `<legend>`, `<label>`, `<input>`, `<select>`, `<textarea>` e `<button>`. Essas tags foram utilizadas de forma coerente com a proposta do projeto e tornaram a página mais organizada e interativa. No geral, ficou um trabalho bem desenvolvido e com uma boa aplicação dos elementos estudados em HTML5. 
+
+
+
+
 
 
 
