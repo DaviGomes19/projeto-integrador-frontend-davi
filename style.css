@@ -9,6 +9,11 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #eef0ff;   /* fundo azul bem clarinho */
+  background-image: linear-gradient(rgba(238, 240, 255, 0.7), rgba(238, 240, 255, 0.7)), url("academia.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #14123b;              /* cor do texto */
   line-height: 1.6;            /* espaço entre as linhas */
   max-width: 50rem;            /* largura máxima do conteúdo */
@@ -142,4 +147,96 @@ button {
 button:hover {
   background-color: #2f3cff;
   color: white;
+}
+
+.resumo {
+  background-color: #14123b;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rotulo {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.turma.disponivel {
+  border-left-color: #1f9d55;
+}
+
+.turma.disponivel .rotulo {
+  background-color: #d9f5e3;
+  color: #0f5c32;
+}
+
+.turma.ultimas {
+  border-left-color: #e0a800;
+}
+
+.turma.ultimas .rotulo {
+  background-color: #ffd23f;
+  color: #14123b;
+}
+
+.turma.esgotado {
+  border-left-color: #d64545;
+  opacity: 0.75;
+}
+
+.turma.esgotado .rotulo {
+  background-color: #d64545;
+  color: white;
+}
+
+button[aria-pressed="true"] {
+  background-color: #2f3cff;
+  color: white;
+}
+
+button[aria-pressed="true"]::before {
+  content: "✓ ";
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #2f3cff;
+  outline-offset: 2px;
+}
+
+#busca {
+  margin-top: 0.3rem;
+}
+
+#botaoSoComVagas {
+  margin-bottom: 1rem;
+}
+
+#lista {
+  margin-bottom: 0;
+}
+
+.turma button {
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.turma button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#formNovaTurma {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
 }
